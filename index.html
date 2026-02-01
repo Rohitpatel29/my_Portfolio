@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rohit Kumar — Java Backend Developer | CS Student</title>
+  <meta name="description" content="Rohit Kumar — B.Tech CSE student & Java Backend Developer. Building secure, scalable backend applications with Java & Spring Boot." />
+
+  <!-- Google Fonts (CDN) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Theme color for mobile -->
+  <meta name="theme-color" content="#0f1724" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-dark">
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="Rohit Kumar — Home">
+        <span class="brand-mark" aria-hidden="true">RK</span>
+        <span class="brand-text">
+          <span class="name">Rohit Kumar</span>
+          <span class="role">Java Backend Developer</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M3 7h18M3 12h18M3 17h18"/></svg>
+      </button>
+
+      <nav class="nav" id="primary-navigation" data-visible="false" aria-hidden="true" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#hero">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- backdrop for mobile nav (click to close) -->
+      <div id="navBackdrop" class="nav-backdrop" data-hidden="true" aria-hidden="true" tabindex="-1"></div>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-pressed="true" title="Toggle light / dark">
+          <span class="sun" aria-hidden="true">☀️ </span>
+          <span class="moon" aria-hidden="true"> 🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero container">
+      <div class="hero-grid">
+        <div class="hero-content" data-reveal>
+          <p class="eyebrow">Hello, I'm</p>
+          <h1 class="hero-title">Rohit Kumar</h1>
+          <p class="hero-subtitle">
+            <span id="typed" class="typed-role" aria-live="polite">Java Backend Developer</span>
+            <span class="cursor" aria-hidden="true"></span>
+            <span class="muted">&nbsp;|&nbsp; CS Student</span>
+          </p>
+          <p class="tagline">Building secure, scalable backend applications with Java &amp; Spring Boot</p>
+
+          <div class="hero-ctas">
+            <button class="btn btn-primary" id="downloadResume">Download Resume</button>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <ul class="hero-meta" aria-hidden="true">
+            <li><strong>Email</strong><a href="mailto:rohitkumarer0045@gmail.com">  rohitkumarer0045@gmail.com</a></li>
+            <li><strong>Phone</strong><a href="tel:+919304070908"> +91 9304070908</a></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <!-- Glass card with gradient avatar and micro-bio -->
+          <div class="card glass avatar-card">
+            <div class="avatar">
+              <svg viewBox="0 0 120 120" class="avatar-blob" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                <defs>
+                  <linearGradient id="g1" x1="0" x2="1">
+                    <stop offset="0" stop-color="#6EE7B7" />
+                    <stop offset="1" stop-color="#60A5FA" />
+                  </linearGradient>
+                </defs>
+                <!-- circle is centered at (60,40) -->
+                <circle cx="60" cy="40" r="36" fill="url(#g1)" />
+                <g transform="translate(20,70) scale(0.6)" fill="#0f1724" opacity="0.12">
+                  <path d="M20 4a16 16 0 1 0 0 32 16 16 0 0 0 0-32z" />
+                </g>
+
+                <!-- Center the initials precisely: use the circle's cy as the text y and
+                     SVG alignment attributes for cross-browser consistency -->
+                <text x="60" y="40" text-anchor="middle" dominant-baseline="middle" alignment-baseline="central" font-family="Poppins, Inter, system-ui" font-weight="700" font-size="28" fill="#07203a">RK</text>
+              </svg>
+            </div>
+
+            <div class="card-body">
+              <h3>Rohit Kumar</h3>
+              <p class="muted">B.Tech CSE — DRIEMS University</p>
+
+              <div class="skill-chips">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>REST APIs</span>
+              </div>
+
+              <div class="socials">
+                <a href="https://github.com/Rohitpatel29" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+                <a href="https://www.linkedin.com/in/rohit-kumar-666a2629a" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Decorative gradient / stats -->
+          <div class="stats">
+            <div class="stat">
+              <strong>3</strong>
+              <span>Projects</span>
+            </div>
+            <div class="stat">
+              <strong>100+</strong>
+              <span>DSA problems</span>
+            </div>
+            <div class="stat">
+              <strong>2026</strong>
+              <span>Training</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container section">
+      <div class="section-grid">
+        <div class="panel" data-reveal>
+          <h2>About Me</h2>
+          <p class="lead">Detail-oriented B.Tech CSE student with hands-on experience in Java, Spring Boot, REST APIs, and SQL. Interested in secure, scalable, transaction-based backend systems and eager to grow as a software engineer.</p>
+
+          <ul class="about-list">
+            <li><strong>Focus:</strong> Backend systems, security, high-throughput services</li>
+            <li><strong>Approach:</strong> Clean code, unit-tested features, pragmatic design</li>
+            <li><strong>Learning:</strong> Microservices, distributed systems, message-driven design</li>
+          </ul>
+
+          <a class="btn btn-outline" href="#projects">View Projects</a>
+        </div>
+
+        <aside class="panel glass" data-reveal>
+          <h3>Quick facts</h3>
+          <dl>
+            <dt>Degree</dt><dd>B.Tech Computer Science (2022–2026) — CGPA: 8.4</dd>
+            <dt>Training</dt><dd>SPCL Infotech Services Pvt. Ltd. — Backend Development (2026–Present)</dd>
+            <dt>Certs</dt><dd>Java Programming — MindLuster</dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="container section">
+      <header class="section-head" data-reveal>
+        <h2>Skills</h2>
+        <p class="muted">Technologies, tools and behavioral strengths relevant to backend development.</p>
+      </header>
+
+      <div class="skills-grid" data-reveal>
+        <div class="skill-card glass">
+          <h4>Programming</h4>
+          <div class="skill-list">
+
+            <div class="skill">
+              <div class="skill-head">
+                <span class="skill-name">Java</span>
+                <span class="skill-level" aria-hidden="true">Hands-on (Projects)</span>
+              </div>
+              <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="92" aria-valuetext="Hands-on (Projects)">
+                <div style="--pc:92%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-head">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-level" aria-hidden="true">Comfortable</span>
+              </div>
+              <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="62" aria-valuetext="Comfortable">
+                <div style="--pc:62%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-head">
+                <span class="skill-name">SQL</span>
+                <span class="skill-level" aria-hidden="true">Intermediate</span>
+              </div>
+              <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="78" aria-valuetext="Intermediate">
+                <div style="--pc:78%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div> 
+
+        <div class="skill-card glass">
+          <h4>Frameworks &amp; Tech</h4>
+          <ul class="tech-list">
+            <li>Core Java · OOPs · Data Structures</li>
+            <li>J2EE · Spring MVC · Spring Boot</li>
+            <li>Hibernate · RESTful APIs · HTML/CSS</li>
+          </ul>
+        </div>
+
+        <div class="skill-card glass">
+          <h4>Tools &amp; DB</h4>
+          <ul class="tech-list">
+            <li>Git · GitHub · Maven</li>
+            <li>Eclipse · IntelliJ IDEA · Postman</li>
+            <li>MySQL · RabbitMQ</li>
+          </ul>
+        </div>
+
+        <div class="skill-card glass">
+          <h4>Behavioral</h4>
+          <ul class="behaviour-list">
+            <li>Problem Solving</li>
+            <li>Analytical Thinking</li>
+            <li>Team Collaboration</li>
+            <li>Communication</li>
+            <li>Adaptability</li>
+            <li>Willingness to Learn</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container section">
+      <div class="section-head" data-reveal>
+        <h2>Selected Projects</h2>
+        <p class="muted">Backend-focused projects demonstrating system design, APIs and integrations.</p>
+      </div>
+
+      <div class="projects-grid" data-reveal>
+        <!-- Project 1 -->
+        <article class="project card">
+          <div class="project-body">
+            <h3>Student Management System</h3>
+            <p class="muted">Core Java console application implementing OOPs, CRUD operations and Java Collections (ArrayList).</p>
+            <p class="project-meta"><strong>Tech:</strong> Core Java · Collections · OOP</p>
+
+            <ul class="tech-badges" aria-hidden="false" aria-label="technologies">
+              <li>Java</li>
+              <li>Backend</li>
+              <li>OOP</li>
+            </ul>
+
+            <ul class="project-details" aria-label="Student Management System details">
+              <li><strong>Problem:</strong> Manual student record handling caused duplication and inconsistent validation.</li>
+              <li><strong>Solution:</strong> Designed OOP domain model with ArrayList-backed DAO, input validation and clear CRUD APIs (console-driven).</li>
+              <li><strong>Outcome:</strong> Reliable CRUD flow, easier unit-testing of modules and stronger grasp of Java collections and design principles.</li>
+            </ul>
+          </div>
+          <div class="project-actions">
+            <a class="btn btn-sm" href="#" onclick="openRepo(event, 'https://github.com/Rohitpatel29')">View on GitHub</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project card">
+          <div class="project-body">
+            <h3>YouTube SEO Tags & Thumbnails</h3>
+            <p class="muted">Spring Boot backend with REST APIs and Thymeleaf integration; integrates YouTube Data API v3.</p>
+            <p class="project-meta"><strong>Tech:</strong> Spring Boot · REST · Thymeleaf</p>
+
+            <ul class="tech-badges" aria-hidden="false" aria-label="technologies">
+              <li>Java</li>
+              <li>REST API</li>
+              <li>Spring Boot</li>
+            </ul>
+
+            <ul class="project-details" aria-label="YouTube SEO Tags project details">
+              <li><strong>Problem:</strong> Creators needed scalable generation of relevant tags and thumbnail previews for better discoverability.</li>
+              <li><strong>Solution:</strong> Built Spring Boot REST service that queries YouTube Data API, applies keyword heuristics and serves thumbnail previews via Thymeleaf.</li>
+              <li><strong>Outcome:</strong> Prototype improved tag relevance and reduced manual research time; learned API integration and rate-limit handling.</li>
+            </ul> 
+          </div>
+          <div class="project-actions">
+            <a class="btn btn-sm" href="#" onclick="openRepo(event, 'https://github.com/Rohitpatel29')">View on GitHub</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project card">
+          <div class="project-body">
+            <h3>Backend-Focused Fitness App</h3>
+            <p class="muted">Microservices with Spring Boot, Eureka, API Gateway, RabbitMQ and MySQL; integrates Google Gemini for AI features.</p>
+            <p class="project-meta"><strong>Tech:</strong> Spring Boot · Microservices · RabbitMQ · MySQL</p>
+
+            <ul class="tech-badges" aria-hidden="false" aria-label="technologies">
+              <li>Microservices</li>
+              <li>RabbitMQ</li>
+              <li>MySQL</li>
+            </ul>
+
+            <ul class="project-details" aria-label="Fitness app project details">
+              <li><strong>Problem:</strong> Need for scalable, decoupled backend supporting real-time events and personalized recommendations.</li>
+              <li><strong>Solution:</strong> Implemented Spring Boot microservices with Eureka discovery, API Gateway, RabbitMQ for async events and MySQL for persistence; integrated AI via an external model.
+              </li>
+              <li><strong>Outcome:</strong> Validated async event patterns and service discovery; improved throughput and separation of concerns in prototype architecture.</li>
+            </ul> 
+          </div>
+          <div class="project-actions">
+            <a class="btn btn-sm" href="#" onclick="openRepo(event, 'https://github.com/Rohitpatel29')">View on GitHub</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="more-projects" data-reveal>
+        <a class="btn btn-outline" href="https://github.com/Rohitpatel29" target="_blank" rel="noopener">More on GitHub</a>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / TRAINING -->
+    <section id="experience" class="container section">
+      <header class="section-head" data-reveal>
+        <h2>Training & Experience</h2>
+        <p class="muted">Professional exposure and hands-on training.</p>
+      </header>
+
+      <div class="timeline" data-reveal>
+        <div class="timeline-item glass">
+          <h4>Technical Training — SPCL Infotech Services Pvt. Ltd.</h4>
+          <span class="muted">2026 – Present</span>
+          <p>Backend development training focused on enterprise Java concepts and real-world project exposure.</p>
+
+          <ul class="training-details" aria-label="Training highlights">
+            <li><strong>Technologies:</strong> Java, Spring Boot, MySQL, Maven, RabbitMQ</li>
+            <li><strong>Backend work:</strong> REST API development, integration and debugging of enterprise Java services</li>
+            <li><strong>Learning exposure:</strong> unit testing, CI basics, performance tuning and collaborative code reviews</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <h4>Inter-College Hackathon</h4>
+          <span class="muted">2024</span>
+          <p>Placed in top teams; focused on rapid prototyping and API integrations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="container section">
+      <header class="section-head" data-reveal>
+        <h2>Education</h2>
+      </header>
+
+      <div class="edu-grid" data-reveal>
+        <div class="edu card glass">
+          <h4>B.Tech Computer Science — DRIEMS University</h4>
+          <span class="muted">2022–2026 • CGPA: 8.4</span>
+        </div>
+        <div class="edu card">
+          <h4>Higher Secondary — Braj Mohan Das College</h4>
+          <span class="muted">71%</span>
+        </div>
+        <div class="edu card">
+          <h4>Secondary — R.K. High School</h4>
+          <span class="muted">73.6%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTS -->
+    <section id="certifications" class="container section">
+      <header class="section-head" data-reveal>
+        <h2>Certifications & Achievements</h2>
+      </header>
+
+      <div class="certs" data-reveal>
+        <ul>
+          <li>Java Programming Language — MindLuster</li>
+          <li>Inter-College Hackathon 2024</li>
+          <li>100+ DSA problems solved on LeetCode</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container section">
+      <div class="contact-grid" data-reveal>
+        <div class="panel glass">
+          <h2>Contact</h2>
+          <p class="muted">I'm open to internships and entry-level backend roles — reach out!</p>
+
+          <div class="availability-badge" role="status" aria-label="Availability">🟢&nbsp;<span>Actively looking for Backend Intern / Fresher roles</span></div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required minlength="2" placeholder="Your name" />
+              <small class="error" id="nameError" aria-live="polite"></small>
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="you@email.com" />
+              <small class="error" id="emailError" aria-live="polite"></small>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Brief message"></textarea>
+              <small class="error" id="messageError" aria-live="polite"></small>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Send message</button>
+              <button class="btn btn-ghost" type="reset">Reset</button>
+            </div>
+
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+
+            <p class="contact-reply-note">I usually reply within 24 hours.</p>
+          </form>
+        </div>
+
+        <aside class="panel contact-info">
+          <h3>Get in touch</h3>
+          <p><strong>Email:</strong> <a href="mailto:rohitkumarer0045@gmail.com">rohitkumarer0045@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+919304070908">+91 9304070908</a></p>
+
+          <div class="social-icons">
+            <a href="https://github.com/Rohitpatel29" target="_blank" rel="noopener" aria-label="Rohit's GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/in/rohit-kumar-666a2629a" target="_blank" rel="noopener" aria-label="Rohit's LinkedIn">LinkedIn</a>
+            <a href="mailto:rohitkumarer0045@email.com" aria-label="Email Rohit">Email</a>
+          </div>
+
+          <div class="cta-card glass">
+            <h4>Available for internships</h4>
+            <p class="muted">Open to backend roles, internships and collaborative projects.</p>
+            <a class="btn btn-outline" href="https://github.com/Rohitpatel29" target="_blank" rel="noopener">View GitHub</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="copyright">© <span id="year"></span> Rohit Kumar — Built with care • <a href="#">Privacy</a></div>
+      <div class="footer-links">
+        <a href="https://github.com/Rohitpatel29" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/rohit-kumar-666a2629a" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:rohitkumarer0045@email.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
